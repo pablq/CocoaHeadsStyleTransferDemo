@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FB0DDDB26CAFE6B0063B6A5 /* SelectStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDDA26CAFE6B0063B6A5 /* SelectStyleView.swift */; };
+		8FB0DDDE26CAFED00063B6A5 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDDD26CAFED00063B6A5 /* Style.swift */; };
+		8FB0DDE126CB03700063B6A5 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDE026CB03700063B6A5 /* AppState.swift */; };
+		8FB0DDE326CB04060063B6A5 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDE226CB04060063B6A5 /* AppAction.swift */; };
+		8FB0DDE526CB077F0063B6A5 /* NewStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDE426CB077F0063B6A5 /* NewStyleView.swift */; };
 		8FF5F52626C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF5F52526C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift */; };
-		8FF5F52826C9DF81007476A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF5F52726C9DF81007476A3 /* ContentView.swift */; };
+		8FF5F52826C9DF81007476A3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF5F52726C9DF81007476A3 /* MainView.swift */; };
 		8FF5F52A26C9DF83007476A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF5F52926C9DF83007476A3 /* Assets.xcassets */; };
 		8FF5F52D26C9DF83007476A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF5F52C26C9DF83007476A3 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8FB0DDDA26CAFE6B0063B6A5 /* SelectStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStyleView.swift; sourceTree = "<group>"; };
+		8FB0DDDD26CAFED00063B6A5 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		8FB0DDE026CB03700063B6A5 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		8FB0DDE226CB04060063B6A5 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		8FB0DDE426CB077F0063B6A5 /* NewStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStyleView.swift; sourceTree = "<group>"; };
 		8FF5F52226C9DF81007476A3 /* CocoaHeadsStyleTransferDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHeadsStyleTransferDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF5F52526C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaHeadsStyleTransferDemoApp.swift; sourceTree = "<group>"; };
-		8FF5F52726C9DF81007476A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8FF5F52726C9DF81007476A3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8FF5F52926C9DF83007476A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FF5F52C26C9DF83007476A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8FF5F52E26C9DF83007476A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +43,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8FB0DDD926CAFE550063B6A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8FF5F52726C9DF81007476A3 /* MainView.swift */,
+				8FB0DDDA26CAFE6B0063B6A5 /* SelectStyleView.swift */,
+				8FB0DDE426CB077F0063B6A5 /* NewStyleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8FB0DDDC26CAFEC40063B6A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FB0DDDD26CAFED00063B6A5 /* Style.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8FB0DDDF26CB03650063B6A5 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				8FB0DDE026CB03700063B6A5 /* AppState.swift */,
+				8FB0DDE226CB04060063B6A5 /* AppAction.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
 		8FF5F51926C9DF81007476A3 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +89,10 @@
 		8FF5F52426C9DF81007476A3 /* CocoaHeadsStyleTransferDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8FB0DDDF26CB03650063B6A5 /* State */,
+				8FB0DDDC26CAFEC40063B6A5 /* Model */,
+				8FB0DDD926CAFE550063B6A5 /* View */,
 				8FF5F52526C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift */,
-				8FF5F52726C9DF81007476A3 /* ContentView.swift */,
 				8FF5F52926C9DF83007476A3 /* Assets.xcassets */,
 				8FF5F52E26C9DF83007476A3 /* Info.plist */,
 				8FF5F52B26C9DF83007476A3 /* Preview Content */,
@@ -138,8 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FF5F52826C9DF81007476A3 /* ContentView.swift in Sources */,
+				8FB0DDE526CB077F0063B6A5 /* NewStyleView.swift in Sources */,
+				8FF5F52826C9DF81007476A3 /* MainView.swift in Sources */,
+				8FB0DDE326CB04060063B6A5 /* AppAction.swift in Sources */,
+				8FB0DDE126CB03700063B6A5 /* AppState.swift in Sources */,
 				8FF5F52626C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift in Sources */,
+				8FB0DDDB26CAFE6B0063B6A5 /* SelectStyleView.swift in Sources */,
+				8FB0DDDE26CAFED00063B6A5 /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

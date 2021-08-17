@@ -14,9 +14,14 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             Group {
-                if let image = appState.currImage {
+                if let frame = appState.currImage,
+                   let styleThumbnail = appState.selectedStyle?.image {
                     VStack {
-                        VideoFeedView(image: image)
+                        Image(uiImage: styleThumbnail)
+                            .resizable()
+                            .frame(width: 75, height: 75, alignment: .center)
+                            .aspectRatio(contentMode: .fit)
+                        VideoFeedView(image: frame)
                         HStack {
                             Button("Toggle Styling") {
                                 appState.dispatch(action: .toggleStyle)
@@ -31,7 +36,7 @@ struct MainView: View {
                     ProgressView()
                 }
             }
-            .navigationTitle(appState.styleName ?? "No Style")
+            .navigationTitle(appState.selectedStyle?.name ?? "No Style")
         }
         .onAppear { appState.dispatch(action: .startVideo) }
         .onDisappear { appState.dispatch(action: .stopVideo) }

@@ -25,10 +25,11 @@ struct SelectStyleView: View {
                 .padding()
             }
             Button("Train New Style") {
-                // TODO: Implement me
+                // TODO: Update to Xcode Beta and implement me!
             }
             .disabled(true)
             .padding()
+            Spacer()
         }
     }
 }

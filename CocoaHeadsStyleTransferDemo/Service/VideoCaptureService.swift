@@ -24,8 +24,6 @@ class VideoCaptureService {
         let videoOutput = AVCaptureVideoDataOutput()
 
         videoOutput.alwaysDiscardsLateVideoFrames = true
-        // TODO: What does the next line do?
-        videoOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA as UInt32]
 
         let queue = DispatchQueue(label: "VideoQueue", qos: .userInitiated)
         videoOutput.setSampleBufferDelegate(videoDataHandler, queue: queue)

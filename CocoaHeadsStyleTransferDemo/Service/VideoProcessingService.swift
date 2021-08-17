@@ -15,17 +15,19 @@ class VideoProcessingService: NSObject, AVCaptureVideoDataOutputSampleBufferDele
     var shouldApplyStyle: Bool = true
     var outputHandler: OutputHandler?
 
+    private let mlExpectedInputSize = CGSize(width: 512, height: 512)
+
     func captureOutput(
         _ output: AVCaptureOutput,
         didOutput sampleBuffer: CMSampleBuffer,
         from connection: AVCaptureConnection
     ) {
         guard let cgImage = sampleBuffer.cgImage,
-              let cropped = cgImage.centerCrop(to: CGSize(width: 512, height: 512)) else { return }
+              let croppedImage = cgImage.centerCrop(to: mlExpectedInputSize) else { return }
         if let mlModelFilename = style?.mlModelFilename, shouldApplyStyle {
-            applyStyle(withModel: mlModelFilename, to: cropped)
+            applyStyle(withModel: mlModelFilename, to: croppedImage)
         } else {
-            notify(result: cropped)
+            notify(result: croppedImage)
         }
     }
 

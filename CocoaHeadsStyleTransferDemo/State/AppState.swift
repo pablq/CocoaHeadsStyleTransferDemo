@@ -20,8 +20,8 @@ class AppState: ObservableObject {
 
     @Published private(set) var currImage: UIImage?
 
-    var styleName: String? {
-        videoProcessingService.style?.name
+    var selectedStyle: Style? {
+        videoProcessingService.style
     }
 
     private let videoCaptureService = VideoCaptureService()

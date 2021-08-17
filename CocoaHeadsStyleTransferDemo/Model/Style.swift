@@ -5,7 +5,7 @@
 //  Created by Pablo Philipps on 8/16/21.
 //
 
-import Foundation
+import UIKit
 
 struct Style: Identifiable {
     // swiftlint:disable:next identifier_name
@@ -15,5 +15,9 @@ struct Style: Identifiable {
 
     var mlModelFilename: String {
         name
+    }
+
+    var image: UIImage? {
+        UIImage(named: name)
     }
 }

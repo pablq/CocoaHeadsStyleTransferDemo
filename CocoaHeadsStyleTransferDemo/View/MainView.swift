@@ -15,28 +15,34 @@ struct MainView: View {
         NavigationView {
             Group {
                 if let image = appState.currImage {
-                    Image(uiImage: image)
+                    VStack {
+                        VideoFeedView(image: image)
+                        HStack {
+                            Button("Toggle Styling") {
+                                appState.dispatch(action: .toggleStyle)
+                            }
+                            Spacer()
+                            NavigationLink(destination: SelectStyleView()) {
+                                Text("Select Style")
+                            }
+                        }.padding()
+                    }
                 } else {
                     ProgressView()
                 }
             }
-            .navigationTitle(appState.selectedStyle.name)
-            .toolbar {
-                ToolbarItem(placement: .primaryAction) {
-                    NavigationLink(destination: SelectStyleView()) {
-                        Text("Select Style")
-                    }
-                    .disabled(true)
-                }
-            }
+            .navigationTitle(appState.styleName ?? "No Style")
         }
-        .onAppear { appState.dispatch(action: .startCamera) }
-        .onDisappear { appState.dispatch(action: .stopCamera) }
+        .onAppear { appState.dispatch(action: .startVideo) }
+        .onDisappear { appState.dispatch(action: .stopVideo) }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static let envObject = AppState()
+
     static var previews: some View {
         MainView()
+            .environmentObject(envObject)
     }
 }

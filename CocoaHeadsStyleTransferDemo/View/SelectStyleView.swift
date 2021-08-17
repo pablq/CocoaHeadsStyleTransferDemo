@@ -22,17 +22,13 @@ struct SelectStyleView: View {
                     appState.dispatch(action: .selectStyle(style))
                     presentation.wrappedValue.dismiss()
                 }
+                .padding()
             }
-        }.toolbar {
-            ToolbarItem(placement: .primaryAction) {
-                Button("New Style") {
-                    presentNewStyleView.toggle()
-                }
-                .fullScreenCover(
-                    isPresented: $presentNewStyleView,
-                    content: NewStyleView.init
-                )
+            Button("Train New Style") {
+                // TODO: Implement me
             }
+            .disabled(true)
+            .padding()
         }
     }
 }

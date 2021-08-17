@@ -9,7 +9,8 @@ import Foundation
 
 enum AppAction {
     case selectStyle(Style)
+    case toggleStyle
     case addStyle(Style)
-    case startCamera
-    case stopCamera
+    case startVideo
+    case stopVideo
 }

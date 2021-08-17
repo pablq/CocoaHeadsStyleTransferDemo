@@ -7,31 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F526D5B26CB7126004E10AD /* CMSampleBuffer+CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F526D5A26CB7126004E10AD /* CMSampleBuffer+CGImage.swift */; };
+		8F526D5F26CB90CA004E10AD /* Etching.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8F526D5D26CB90CA004E10AD /* Etching.mlmodel */; };
 		8FB0DDDB26CAFE6B0063B6A5 /* SelectStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDDA26CAFE6B0063B6A5 /* SelectStyleView.swift */; };
 		8FB0DDDE26CAFED00063B6A5 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDDD26CAFED00063B6A5 /* Style.swift */; };
 		8FB0DDE126CB03700063B6A5 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDE026CB03700063B6A5 /* AppState.swift */; };
 		8FB0DDE326CB04060063B6A5 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDE226CB04060063B6A5 /* AppAction.swift */; };
-		8FB0DDE526CB077F0063B6A5 /* NewStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDE426CB077F0063B6A5 /* NewStyleView.swift */; };
-		8FB0DDE826CB15240063B6A5 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDE726CB15240063B6A5 /* CameraService.swift */; };
+		8FB0DDE826CB15240063B6A5 /* VideoCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDE726CB15240063B6A5 /* VideoCaptureService.swift */; };
+		8FB0DDF026CB4A440063B6A5 /* ModelTrainingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDEF26CB4A440063B6A5 /* ModelTrainingService.swift */; };
+		8FB0DDF426CB54880063B6A5 /* VideoProcessingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDF326CB54880063B6A5 /* VideoProcessingService.swift */; };
+		8FB0DDF626CB59EF0063B6A5 /* VideoFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDF526CB59EF0063B6A5 /* VideoFeedView.swift */; };
 		8FF5F52626C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF5F52526C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift */; };
 		8FF5F52826C9DF81007476A3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF5F52726C9DF81007476A3 /* MainView.swift */; };
 		8FF5F52A26C9DF83007476A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF5F52926C9DF83007476A3 /* Assets.xcassets */; };
 		8FF5F52D26C9DF83007476A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF5F52C26C9DF83007476A3 /* Preview Assets.xcassets */; };
+		8FF8842B26CC2C7500CBC1AE /* CVPixelBuffer+CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8842A26CC2C7500CBC1AE /* CVPixelBuffer+CGImage.swift */; };
+		8FF8842D26CC32FA00CBC1AE /* CGImage+CenterCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8842C26CC32FA00CBC1AE /* CGImage+CenterCrop.swift */; };
+		8FF8843126CC3A2400CBC1AE /* Max.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8842E26CC3A2300CBC1AE /* Max.mlmodel */; };
+		8FF8843226CC3A2400CBC1AE /* Sean.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8842F26CC3A2300CBC1AE /* Sean.mlmodel */; };
+		8FF8843326CC3A2400CBC1AE /* Mandy.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8843026CC3A2400CBC1AE /* Mandy.mlmodel */; };
+		8FF8843526CC42E800CBC1AE /* Painting.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8843426CC42E800CBC1AE /* Painting.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F526D5A26CB7126004E10AD /* CMSampleBuffer+CGImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMSampleBuffer+CGImage.swift"; sourceTree = "<group>"; };
+		8F526D5D26CB90CA004E10AD /* Etching.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Etching.mlmodel; sourceTree = "<group>"; };
 		8FB0DDDA26CAFE6B0063B6A5 /* SelectStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStyleView.swift; sourceTree = "<group>"; };
 		8FB0DDDD26CAFED00063B6A5 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		8FB0DDE026CB03700063B6A5 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		8FB0DDE226CB04060063B6A5 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
-		8FB0DDE426CB077F0063B6A5 /* NewStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStyleView.swift; sourceTree = "<group>"; };
-		8FB0DDE726CB15240063B6A5 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		8FB0DDE726CB15240063B6A5 /* VideoCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureService.swift; sourceTree = "<group>"; };
+		8FB0DDEF26CB4A440063B6A5 /* ModelTrainingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTrainingService.swift; sourceTree = "<group>"; };
+		8FB0DDF326CB54880063B6A5 /* VideoProcessingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProcessingService.swift; sourceTree = "<group>"; };
+		8FB0DDF526CB59EF0063B6A5 /* VideoFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFeedView.swift; sourceTree = "<group>"; };
 		8FF5F52226C9DF81007476A3 /* CocoaHeadsStyleTransferDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHeadsStyleTransferDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF5F52526C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaHeadsStyleTransferDemoApp.swift; sourceTree = "<group>"; };
 		8FF5F52726C9DF81007476A3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8FF5F52926C9DF83007476A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FF5F52C26C9DF83007476A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8FF5F52E26C9DF83007476A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FF8842A26CC2C7500CBC1AE /* CVPixelBuffer+CGImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+CGImage.swift"; sourceTree = "<group>"; };
+		8FF8842C26CC32FA00CBC1AE /* CGImage+CenterCrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+CenterCrop.swift"; sourceTree = "<group>"; };
+		8FF8842E26CC3A2300CBC1AE /* Max.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Max.mlmodel; sourceTree = "<group>"; };
+		8FF8842F26CC3A2300CBC1AE /* Sean.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Sean.mlmodel; sourceTree = "<group>"; };
+		8FF8843026CC3A2400CBC1AE /* Mandy.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Mandy.mlmodel; sourceTree = "<group>"; };
+		8FF8843426CC42E800CBC1AE /* Painting.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Painting.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F526D5926CB7112004E10AD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8F526D5A26CB7126004E10AD /* CMSampleBuffer+CGImage.swift */,
+				8FF8842A26CC2C7500CBC1AE /* CVPixelBuffer+CGImage.swift */,
+				8FF8842C26CC32FA00CBC1AE /* CGImage+CenterCrop.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8FB0DDD926CAFE550063B6A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				8FF5F52726C9DF81007476A3 /* MainView.swift */,
 				8FB0DDDA26CAFE6B0063B6A5 /* SelectStyleView.swift */,
-				8FB0DDE426CB077F0063B6A5 /* NewStyleView.swift */,
+				8FB0DDF526CB59EF0063B6A5 /* VideoFeedView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -58,6 +88,11 @@
 		8FB0DDDC26CAFEC40063B6A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8FF8843026CC3A2400CBC1AE /* Mandy.mlmodel */,
+				8FF8842E26CC3A2300CBC1AE /* Max.mlmodel */,
+				8FF8842F26CC3A2300CBC1AE /* Sean.mlmodel */,
+				8F526D5D26CB90CA004E10AD /* Etching.mlmodel */,
+				8FF8843426CC42E800CBC1AE /* Painting.mlmodel */,
 				8FB0DDDD26CAFED00063B6A5 /* Style.swift */,
 			);
 			path = Model;
@@ -75,7 +110,9 @@
 		8FB0DDE626CB13890063B6A5 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				8FB0DDE726CB15240063B6A5 /* CameraService.swift */,
+				8FB0DDE726CB15240063B6A5 /* VideoCaptureService.swift */,
+				8FB0DDEF26CB4A440063B6A5 /* ModelTrainingService.swift */,
+				8FB0DDF326CB54880063B6A5 /* VideoProcessingService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -99,6 +136,7 @@
 		8FF5F52426C9DF81007476A3 /* CocoaHeadsStyleTransferDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8F526D5926CB7112004E10AD /* Extensions */,
 				8FB0DDE626CB13890063B6A5 /* Service */,
 				8FB0DDDF26CB03650063B6A5 /* State */,
 				8FB0DDDC26CAFEC40063B6A5 /* Model */,
@@ -126,6 +164,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FF5F53126C9DF83007476A3 /* Build configuration list for PBXNativeTarget "CocoaHeadsStyleTransferDemo" */;
 			buildPhases = (
+				8FB0DDE926CB419B0063B6A5 /* ShellScript */,
 				8FF5F51E26C9DF81007476A3 /* Sources */,
 				8FF5F51F26C9DF81007476A3 /* Frameworks */,
 				8FF5F52026C9DF81007476A3 /* Resources */,
@@ -183,18 +222,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8FB0DDE926CB419B0063B6A5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8FF5F51E26C9DF81007476A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FB0DDE826CB15240063B6A5 /* CameraService.swift in Sources */,
-				8FB0DDE526CB077F0063B6A5 /* NewStyleView.swift in Sources */,
+				8FF8843326CC3A2400CBC1AE /* Mandy.mlmodel in Sources */,
+				8F526D5B26CB7126004E10AD /* CMSampleBuffer+CGImage.swift in Sources */,
+				8FB0DDE826CB15240063B6A5 /* VideoCaptureService.swift in Sources */,
+				8FF8842B26CC2C7500CBC1AE /* CVPixelBuffer+CGImage.swift in Sources */,
+				8FF8843226CC3A2400CBC1AE /* Sean.mlmodel in Sources */,
 				8FF5F52826C9DF81007476A3 /* MainView.swift in Sources */,
 				8FB0DDE326CB04060063B6A5 /* AppAction.swift in Sources */,
+				8FB0DDF626CB59EF0063B6A5 /* VideoFeedView.swift in Sources */,
 				8FB0DDE126CB03700063B6A5 /* AppState.swift in Sources */,
+				8FB0DDF026CB4A440063B6A5 /* ModelTrainingService.swift in Sources */,
+				8FF8843126CC3A2400CBC1AE /* Max.mlmodel in Sources */,
+				8F526D5F26CB90CA004E10AD /* Etching.mlmodel in Sources */,
+				8FB0DDF426CB54880063B6A5 /* VideoProcessingService.swift in Sources */,
 				8FF5F52626C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift in Sources */,
+				8FF8842D26CC32FA00CBC1AE /* CGImage+CenterCrop.swift in Sources */,
 				8FB0DDDB26CAFE6B0063B6A5 /* SelectStyleView.swift in Sources */,
+				8FF8843526CC42E800CBC1AE /* Painting.mlmodel in Sources */,
 				8FB0DDDE26CAFED00063B6A5 /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

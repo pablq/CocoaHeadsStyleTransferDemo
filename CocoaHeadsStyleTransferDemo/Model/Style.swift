@@ -8,10 +8,12 @@
 import Foundation
 
 struct Style: Identifiable {
-
+    // swiftlint:disable:next identifier_name
     var id: String { name }
 
     let name: String
 
-    static let defaultStyle = Style(name: "At The Gallery")
+    var mlModelFilename: String {
+        name
+    }
 }

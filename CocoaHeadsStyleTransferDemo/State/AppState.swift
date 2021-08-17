@@ -10,34 +10,47 @@ import SwiftUI
 
 class AppState: ObservableObject {
 
-    @Published private(set) var styles: [Style] = [Style.defaultStyle]
+    @Published private(set) var styles: [Style] = [
+        Style(name: "Etching"),
+        Style(name: "Painting"),
+        Style(name: "Max"),
+        Style(name: "Mandy"),
+        Style(name: "Sean")
+    ]
 
-    @Published private(set) var selectedStyle = Style.defaultStyle
+    @Published private(set) var currImage: UIImage?
 
-    @Published private(set) var currImage: UIImage? = nil
+    var styleName: String? {
+        videoProcessingService.style?.name
+    }
 
-    private let cameraService = CameraService()
+    private let videoCaptureService = VideoCaptureService()
+    private let videoProcessingService = VideoProcessingService()
 
     func dispatch(action: AppAction) {
         switch action {
         case .selectStyle(let style):
-            selectedStyle = style
+            videoProcessingService.style = style
+            videoProcessingService.shouldApplyStyle = true
         case .addStyle(let style):
             styles.append(style)
-            selectedStyle = style
-        case .startCamera:
-            if !cameraService.isSessionConfigured {
-                cameraService.configureSession(with: handleCameraServiceUpdate)
+            videoProcessingService.style = style
+            videoProcessingService.shouldApplyStyle = true
+        case .startVideo:
+            if !videoCaptureService.isSessionConfigured {
+                videoProcessingService.outputHandler = { [unowned self] cgImage in
+                    currImage = UIImage(cgImage: cgImage)
+                }
+                videoProcessingService.style = styles.first
+                videoProcessingService.shouldApplyStyle = true
+                videoCaptureService.configureSession(videoDataHandler: videoProcessingService)
             }
-            cameraService.startRunning()
-        case .stopCamera:
-            cameraService.stopRunning()
+            videoCaptureService.startRunning()
+        case .stopVideo:
+            videoCaptureService.stopRunning()
             currImage = nil
-            break
+        case .toggleStyle:
+            videoProcessingService.shouldApplyStyle = !videoProcessingService.shouldApplyStyle
         }
-    }
-
-    private func handleCameraServiceUpdate(_ newImage: CGImage) {
-        currImage = UIImage(cgImage: newImage)
     }
 }

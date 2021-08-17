@@ -18,7 +18,7 @@ class AppState: ObservableObject {
         Style(name: "Sean")
     ]
 
-    @Published private(set) var currImage: UIImage?
+    @Published private(set) var currentVideoFrame: UIImage?
 
     var selectedStyle: Style? {
         videoProcessingService.style
@@ -39,7 +39,7 @@ class AppState: ObservableObject {
         case .startVideo:
             if !videoCaptureService.isSessionConfigured {
                 videoProcessingService.outputHandler = { [unowned self] cgImage in
-                    currImage = UIImage(cgImage: cgImage)
+                    currentVideoFrame = UIImage(cgImage: cgImage)
                 }
                 videoProcessingService.style = styles.first
                 videoProcessingService.shouldApplyStyle = true
@@ -48,7 +48,7 @@ class AppState: ObservableObject {
             videoCaptureService.startRunning()
         case .stopVideo:
             videoCaptureService.stopRunning()
-            currImage = nil
+            currentVideoFrame = nil
         case .toggleStyle:
             videoProcessingService.shouldApplyStyle = !videoProcessingService.shouldApplyStyle
         }

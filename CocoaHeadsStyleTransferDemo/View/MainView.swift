@@ -14,7 +14,7 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             Group {
-                if let frame = appState.currImage,
+                if let frame = appState.currentVideoFrame,
                    let styleThumbnail = appState.selectedStyle?.image {
                     VStack {
                         Image(uiImage: styleThumbnail)

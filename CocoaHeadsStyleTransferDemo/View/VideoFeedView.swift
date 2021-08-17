@@ -20,7 +20,6 @@ struct VideoFeedView: View {
                 .aspectRatio(contentMode: .fit)
                 .padding()
         }
-
     }
 }
 

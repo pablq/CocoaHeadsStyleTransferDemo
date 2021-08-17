@@ -12,6 +12,7 @@
 		8FB0DDE126CB03700063B6A5 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDE026CB03700063B6A5 /* AppState.swift */; };
 		8FB0DDE326CB04060063B6A5 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDE226CB04060063B6A5 /* AppAction.swift */; };
 		8FB0DDE526CB077F0063B6A5 /* NewStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDE426CB077F0063B6A5 /* NewStyleView.swift */; };
+		8FB0DDE826CB15240063B6A5 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0DDE726CB15240063B6A5 /* CameraService.swift */; };
 		8FF5F52626C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF5F52526C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift */; };
 		8FF5F52826C9DF81007476A3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF5F52726C9DF81007476A3 /* MainView.swift */; };
 		8FF5F52A26C9DF83007476A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF5F52926C9DF83007476A3 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		8FB0DDE026CB03700063B6A5 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		8FB0DDE226CB04060063B6A5 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
 		8FB0DDE426CB077F0063B6A5 /* NewStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStyleView.swift; sourceTree = "<group>"; };
+		8FB0DDE726CB15240063B6A5 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		8FF5F52226C9DF81007476A3 /* CocoaHeadsStyleTransferDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHeadsStyleTransferDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF5F52526C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaHeadsStyleTransferDemoApp.swift; sourceTree = "<group>"; };
 		8FF5F52726C9DF81007476A3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 			path = State;
 			sourceTree = "<group>";
 		};
+		8FB0DDE626CB13890063B6A5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8FB0DDE726CB15240063B6A5 /* CameraService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		8FF5F51926C9DF81007476A3 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +99,7 @@
 		8FF5F52426C9DF81007476A3 /* CocoaHeadsStyleTransferDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8FB0DDE626CB13890063B6A5 /* Service */,
 				8FB0DDDF26CB03650063B6A5 /* State */,
 				8FB0DDDC26CAFEC40063B6A5 /* Model */,
 				8FB0DDD926CAFE550063B6A5 /* View */,
@@ -177,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB0DDE826CB15240063B6A5 /* CameraService.swift in Sources */,
 				8FB0DDE526CB077F0063B6A5 /* NewStyleView.swift in Sources */,
 				8FF5F52826C9DF81007476A3 /* MainView.swift in Sources */,
 				8FB0DDE326CB04060063B6A5 /* AppAction.swift in Sources */,

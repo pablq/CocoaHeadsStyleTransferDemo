@@ -13,16 +13,25 @@ struct MainView: View {
 
     var body: some View {
         NavigationView {
-            Text("Main View")
-                .toolbar {
-                    ToolbarItem(placement: .primaryAction) {
-                        NavigationLink(destination: SelectStyleView()) {
-                            Text("Select Style")
-                        }
-                        .disabled(true)
-                    }
+            Group {
+                if let image = appState.currImage {
+                    Image(uiImage: image)
+                } else {
+                    ProgressView()
                 }
+            }
+            .navigationTitle(appState.selectedStyle.name)
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    NavigationLink(destination: SelectStyleView()) {
+                        Text("Select Style")
+                    }
+                    .disabled(true)
+                }
+            }
         }
+        .onAppear { appState.dispatch(action: .startCamera) }
+        .onDisappear { appState.dispatch(action: .stopCamera) }
     }
 }
 

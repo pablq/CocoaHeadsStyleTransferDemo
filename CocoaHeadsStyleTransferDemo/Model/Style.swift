@@ -5,19 +5,28 @@
 //  Created by Pablo Philipps on 8/16/21.
 //
 
-import UIKit
-
-struct Style: Identifiable {
-    // swiftlint:disable:next identifier_name
-    var id: String { name }
-
-    let name: String
+enum Style: String, CaseIterable, Identifiable {
+    case none = "No Style"
+    case etching = "Etching"
+    case painting = "Painting"
+    case max = "Max"
+    case mandy = "Mandy"
+    case sean = "Sean"
 
     var mlModelFilename: String {
-        name
+        rawValue
     }
 
-    var image: UIImage? {
-        UIImage(named: name)
+    var imageName: String {
+        rawValue
+    }
+
+    var name: String {
+        rawValue
+    }
+
+    // swiftlint:disable:next identifier_name
+    var id: String {
+        rawValue
     }
 }

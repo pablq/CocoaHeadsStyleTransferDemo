@@ -1,16 +1,16 @@
 //
-//  AppAction.swift
+//  Action.swift
 //  CocoaHeadsStyleTransferDemo
 //
 //  Created by Pablo Philipps on 8/16/21.
 //
 
-import Foundation
+import CoreGraphics
 
-enum AppAction {
+enum Action {
     case selectStyle(Style)
     case toggleStyle
-    case addStyle(Style)
     case startVideo
     case stopVideo
+    case updateVideoFrame(CGImage)
 }

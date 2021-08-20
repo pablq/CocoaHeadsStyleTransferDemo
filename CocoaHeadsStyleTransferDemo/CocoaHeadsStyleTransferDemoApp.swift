@@ -12,7 +12,13 @@ struct CocoaHeadsStyleTransferDemoApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
-                .environmentObject(AppState())
+                .environmentObject(
+                    Store(
+                        initial: State(styleTransferService: StyleTransferService()),
+                        reducer: globalReducer,
+                        middleware: globalVideoFeedMiddleware(with: VideoCaptureService())
+                    )
+                )
         }
     }
 }

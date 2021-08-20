@@ -1,5 +1,5 @@
 //
-//  VideoFeedView.swift
+//  CurrentFrameView.swift
 //  CocoaHeadsStyleTransferDemo
 //
 //  Created by Pablo Philipps on 8/16/21.
@@ -7,9 +7,7 @@
 
 import SwiftUI
 
-struct VideoFeedView: View {
-
-    @EnvironmentObject var appState: AppState
+struct VideoWindowView: View {
 
     let image: UIImage
 
@@ -23,8 +21,8 @@ struct VideoFeedView: View {
     }
 }
 
-struct VideoFeedView_Previews: PreviewProvider {
+struct CurrentFrameView_Previews: PreviewProvider {
     static var previews: some View {
-        VideoFeedView(image: UIImage())
+        VideoWindowView(image: UIImage())
     }
 }

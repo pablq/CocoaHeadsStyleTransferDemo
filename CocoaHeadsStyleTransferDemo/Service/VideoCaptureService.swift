@@ -7,11 +7,16 @@
 
 import AVFoundation
 
+protocol VideoCaptureServiceOutputHandling: AVCaptureVideoDataOutputSampleBufferDelegate {
+    var queue: DispatchQueue { get }
+}
+
 class VideoCaptureService {
-    private var captureSession: AVCaptureSession?
     private(set) var isSessionConfigured: Bool = false
 
-    func configureSession(videoDataHandler: AVCaptureVideoDataOutputSampleBufferDelegate) {
+    private var captureSession: AVCaptureSession?
+
+    func configureSession(with outputHandler: VideoCaptureServiceOutputHandling) {
         captureSession = AVCaptureSession()
         captureSession?.sessionPreset = AVCaptureSession.Preset.medium
         guard let backCamera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back),
@@ -22,11 +27,9 @@ class VideoCaptureService {
         captureSession?.sessionPreset = AVCaptureSession.Preset.medium
 
         let videoOutput = AVCaptureVideoDataOutput()
-
         videoOutput.alwaysDiscardsLateVideoFrames = true
+        videoOutput.setSampleBufferDelegate(outputHandler, queue: outputHandler.queue)
 
-        let queue = DispatchQueue(label: "VideoQueue", qos: .userInitiated)
-        videoOutput.setSampleBufferDelegate(videoDataHandler, queue: queue)
         if captureSession?.canAddOutput(videoOutput) == true {
             captureSession?.addOutput(videoOutput)
         }

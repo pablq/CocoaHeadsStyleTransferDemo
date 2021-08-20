@@ -10,8 +10,8 @@ import SwiftUI
 
 struct State {
     var styles: [Style] = Style.allCases
-    var currentVideoFrame: UIImage?
-    var currentStyle: Style {
+    var videoFrame: UIImage?
+    var style: Style {
         styleTransferService.style
     }
     var styleTransferService: StyleTransferService

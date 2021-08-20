@@ -14,8 +14,8 @@ struct VideoFeedView: View {
 
     var body: some View {
         VStack {
-            if store.state.currentStyle != .none {
-                StyleThumbnailView(imageName: store.state.currentStyle.imageName)
+            if store.state.style != .none {
+                StyleThumbnailView(imageName: store.state.style.imageName)
             } else {
                 NoStyleThumbnailView()
             }
@@ -24,7 +24,7 @@ struct VideoFeedView: View {
                 toggleStyleAction: {
                     store.dispatch(.toggleStyle)
                 },
-                toggleEnabled: store.state.currentStyle != .none,
+                toggleEnabled: store.state.style != .none,
                 buildSelectStyleDestination: {
                     SelectStyleView()
                 }

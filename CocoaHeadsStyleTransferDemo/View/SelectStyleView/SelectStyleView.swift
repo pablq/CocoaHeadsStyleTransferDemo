@@ -17,7 +17,7 @@ struct SelectStyleView: View {
                 ForEach(store.state.styles) { style in
                     SelectStyleViewCell(
                         name: style.name,
-                        isSelected: store.state.currentStyle == style,
+                        isSelected: store.state.style == style,
                         isEnabled: true
                     ) {
                         presentation.wrappedValue.dismiss()

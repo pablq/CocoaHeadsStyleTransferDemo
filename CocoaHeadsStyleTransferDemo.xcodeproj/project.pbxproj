@@ -26,7 +26,7 @@
 		8FB56ED426CF39F60067596F /* VideoFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB56ED326CF39F60067596F /* VideoFeedView.swift */; };
 		8FB56ED626CF3FB60067596F /* View+IsHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB56ED526CF3FB60067596F /* View+IsHidden.swift */; };
 		8FB56ED826CF42220067596F /* NoStyleThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB56ED726CF42220067596F /* NoStyleThumbnailView.swift */; };
-		8FF5F52626C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF5F52526C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift */; };
+		8FF5F52626C9DF81007476A3 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF5F52526C9DF81007476A3 /* MainApp.swift */; };
 		8FF5F52826C9DF81007476A3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF5F52726C9DF81007476A3 /* MainView.swift */; };
 		8FF5F52D26C9DF83007476A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF5F52C26C9DF83007476A3 /* Preview Assets.xcassets */; };
 		8FF8842B26CC2C7500CBC1AE /* CVPixelBuffer+CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8842A26CC2C7500CBC1AE /* CVPixelBuffer+CGImage.swift */; };
@@ -58,7 +58,7 @@
 		8FB56ED526CF3FB60067596F /* View+IsHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+IsHidden.swift"; sourceTree = "<group>"; };
 		8FB56ED726CF42220067596F /* NoStyleThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoStyleThumbnailView.swift; sourceTree = "<group>"; };
 		8FF5F52226C9DF81007476A3 /* CocoaHeadsStyleTransferDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHeadsStyleTransferDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FF5F52526C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaHeadsStyleTransferDemoApp.swift; sourceTree = "<group>"; };
+		8FF5F52526C9DF81007476A3 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 		8FF5F52726C9DF81007476A3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8FF5F52C26C9DF83007476A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8FF5F52E26C9DF83007476A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 				8FB0DDDF26CB03650063B6A5 /* State */,
 				8FB0DDDC26CAFEC40063B6A5 /* Model */,
 				8FB0DDD926CAFE550063B6A5 /* View */,
-				8FF5F52526C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift */,
+				8FF5F52526C9DF81007476A3 /* MainApp.swift */,
 				8FF5F52E26C9DF83007476A3 /* Info.plist */,
 				8F59B34326CF42F800CB3C4A /* Assets.xcassets */,
 				8FF5F52B26C9DF83007476A3 /* Preview Content */,
@@ -305,7 +305,7 @@
 				8F526D5F26CB90CA004E10AD /* Etching.mlmodel in Sources */,
 				8FB0DDF426CB54880063B6A5 /* StyleTransferService.swift in Sources */,
 				8FB56ED226CF36200067596F /* VideoControlsView.swift in Sources */,
-				8FF5F52626C9DF81007476A3 /* CocoaHeadsStyleTransferDemoApp.swift in Sources */,
+				8FF5F52626C9DF81007476A3 /* MainApp.swift in Sources */,
 				8FF8842D26CC32FA00CBC1AE /* CGImage+CenterCrop.swift in Sources */,
 				8FB56ED826CF42220067596F /* NoStyleThumbnailView.swift in Sources */,
 				8FB56EC826CF21260067596F /* Store.swift in Sources */,

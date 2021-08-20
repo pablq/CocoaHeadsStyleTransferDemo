@@ -20,9 +20,9 @@ let globalReducer: Reducer = { state, action in
     case .startVideo:
         break
     case .stopVideo:
-        mutableState.currentVideoFrame = nil
+        mutableState.videoFrame = nil
     case .updateVideoFrame(let newFrameImage):
-        mutableState.currentVideoFrame = UIImage(cgImage: newFrameImage)
+        mutableState.videoFrame = UIImage(cgImage: newFrameImage)
     }
     return mutableState
 }

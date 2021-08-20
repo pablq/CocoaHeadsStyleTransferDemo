@@ -1,5 +1,5 @@
 //
-//  CocoaHeadsStyleTransferDemoApp.swift
+//  MainApp.swift
 //  CocoaHeadsStyleTransferDemo
 //
 //  Created by Pablo Philipps on 8/15/21.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct CocoaHeadsStyleTransferDemoApp: App {
+struct MainApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()

@@ -10,8 +10,6 @@ import SwiftUI
 struct VideoFeedView: View {
     @EnvironmentObject var store: Store
 
-    let currentFrame: UIImage
-
     var body: some View {
         VStack {
             if store.state.style != .none {
@@ -19,7 +17,7 @@ struct VideoFeedView: View {
             } else {
                 NoStyleThumbnailView()
             }
-            VideoWindowView(image: currentFrame)
+            VideoWindowView(image: store.state.videoFrame)
             VideoControlsView(
                 toggleStyleAction: {
                     store.dispatch(.toggleStyle)
@@ -35,6 +33,7 @@ struct VideoFeedView: View {
 
 struct VideoFeedView_Previews: PreviewProvider {
     static var previews: some View {
-        VideoFeedView(currentFrame: UIImage())
+        VideoFeedView()
+            .environmentObject(Store.preview)
     }
 }

@@ -8,20 +8,22 @@
 import SwiftUI
 
 struct VideoWindowView: View {
-    let image: UIImage
+    let image: UIImage?
 
     var body: some View {
-        VStack {
+        if let image = image {
             Image(uiImage: image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .padding()
+        } else {
+            ProgressView()
         }
     }
 }
 
 struct VideoWindowView_Previews: PreviewProvider {
     static var previews: some View {
-        VideoWindowView(image: UIImage())
+        VideoWindowView(image: UIImage(systemName: "paintpalette"))
     }
 }

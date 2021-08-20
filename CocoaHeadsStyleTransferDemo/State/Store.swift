@@ -40,15 +40,4 @@ class Store: ObservableObject {
             .store(in: &subscriptions)
         state = newState
     }
-
-    static var preview: Store {
-        let fakeMiddleware: Middleware = { _, _ in Empty().eraseToAnyPublisher() }
-        let fakeState = State(styleTransferService: StyleTransferService())
-        fakeState.styleTransferService.style = .etching
-        return Store(
-            initial: fakeState,
-            reducer: globalReducer,
-            middleware: fakeMiddleware
-        )
-    }
 }

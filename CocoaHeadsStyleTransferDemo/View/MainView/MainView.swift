@@ -12,14 +12,8 @@ struct MainView: View {
 
     var body: some View {
         NavigationView {
-            Group {
-                if let frame = store.state.videoFrame {
-                    VideoFeedView(currentFrame: frame)
-                } else {
-                    ProgressView()
-                }
-            }
-            .navigationTitle(store.state.style.name)
+            VideoFeedView()
+                .navigationTitle(store.state.style.name)
         }
         .onAppear { store.dispatch(.startVideo) }
         .onDisappear { store.dispatch(.stopVideo) }

@@ -19,7 +19,11 @@ struct SelectStyleViewCell: View {
         HStack {
             Image(systemName: "checkmark.square")
                 .resizable()
-                .frame(width: checkmarkSize, height: checkmarkSize, alignment: .leading)
+                .frame(
+                    width: checkmarkSize,
+                    height: checkmarkSize,
+                    alignment: .leading
+                )
                 .isHidden(!isSelected)
             Button(name, action: action)
                 .padding()
@@ -27,5 +31,16 @@ struct SelectStyleViewCell: View {
         }
         .frame(maxWidth: .infinity)
         .padding(.leading, -checkmarkSize)
+    }
+}
+
+struct SelectStyleViewCell_Previews: PreviewProvider {
+    static var previews: some View {
+        SelectStyleViewCell(
+            name: "The Style Name",
+            isSelected: true,
+            isEnabled: true,
+            action: {}
+        )
     }
 }

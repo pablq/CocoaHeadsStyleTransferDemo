@@ -12,6 +12,7 @@ enum Style: String, CaseIterable, Identifiable {
     case max = "Max"
     case mandy = "Mandy"
     case sean = "Sean"
+    case seth = "Seth"
 
     var mlModelFilename: String {
         rawValue

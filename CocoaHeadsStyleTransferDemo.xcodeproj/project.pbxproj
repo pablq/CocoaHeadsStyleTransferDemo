@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F11229526CF874300641F0F /* Mandy.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8F11229426CF874300641F0F /* Mandy.mlmodel */; };
+		8F11229726CF875900641F0F /* Seth.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8F11229626CF875900641F0F /* Seth.mlmodel */; };
 		8F526D5B26CB7126004E10AD /* CMSampleBuffer+CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F526D5A26CB7126004E10AD /* CMSampleBuffer+CGImage.swift */; };
 		8F526D5F26CB90CA004E10AD /* Etching.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8F526D5D26CB90CA004E10AD /* Etching.mlmodel */; };
 		8F59B34426CF42F800CB3C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F59B34326CF42F800CB3C4A /* Assets.xcassets */; };
@@ -34,11 +36,12 @@
 		8FF8842D26CC32FA00CBC1AE /* CGImage+CenterCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8842C26CC32FA00CBC1AE /* CGImage+CenterCrop.swift */; };
 		8FF8843126CC3A2400CBC1AE /* Max.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8842E26CC3A2300CBC1AE /* Max.mlmodel */; };
 		8FF8843226CC3A2400CBC1AE /* Sean.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8842F26CC3A2300CBC1AE /* Sean.mlmodel */; };
-		8FF8843326CC3A2400CBC1AE /* Mandy.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8843026CC3A2400CBC1AE /* Mandy.mlmodel */; };
 		8FF8843526CC42E800CBC1AE /* Painting.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8843426CC42E800CBC1AE /* Painting.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F11229426CF874300641F0F /* Mandy.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Mandy.mlmodel; sourceTree = "<group>"; };
+		8F11229626CF875900641F0F /* Seth.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Seth.mlmodel; sourceTree = "<group>"; };
 		8F526D5A26CB7126004E10AD /* CMSampleBuffer+CGImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMSampleBuffer+CGImage.swift"; sourceTree = "<group>"; };
 		8F526D5D26CB90CA004E10AD /* Etching.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Etching.mlmodel; sourceTree = "<group>"; };
 		8F59B34326CF42F800CB3C4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,7 +71,6 @@
 		8FF8842C26CC32FA00CBC1AE /* CGImage+CenterCrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+CenterCrop.swift"; sourceTree = "<group>"; };
 		8FF8842E26CC3A2300CBC1AE /* Max.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Max.mlmodel; sourceTree = "<group>"; };
 		8FF8842F26CC3A2300CBC1AE /* Sean.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Sean.mlmodel; sourceTree = "<group>"; };
-		8FF8843026CC3A2400CBC1AE /* Mandy.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Mandy.mlmodel; sourceTree = "<group>"; };
 		8FF8843426CC42E800CBC1AE /* Painting.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Painting.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,11 +109,12 @@
 		8FB0DDDC26CAFEC40063B6A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8FF8843026CC3A2400CBC1AE /* Mandy.mlmodel */,
+				8F11229426CF874300641F0F /* Mandy.mlmodel */,
 				8FF8842E26CC3A2300CBC1AE /* Max.mlmodel */,
 				8FF8842F26CC3A2300CBC1AE /* Sean.mlmodel */,
 				8F526D5D26CB90CA004E10AD /* Etching.mlmodel */,
 				8FF8843426CC42E800CBC1AE /* Painting.mlmodel */,
+				8F11229626CF875900641F0F /* Seth.mlmodel */,
 				8FB0DDDD26CAFED00063B6A5 /* Style.swift */,
 			);
 			path = Model;
@@ -290,8 +293,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F11229726CF875900641F0F /* Seth.mlmodel in Sources */,
+				8F11229526CF874300641F0F /* Mandy.mlmodel in Sources */,
 				8FB56ED626CF3FB60067596F /* View+IsHidden.swift in Sources */,
-				8FF8843326CC3A2400CBC1AE /* Mandy.mlmodel in Sources */,
 				8F526D5B26CB7126004E10AD /* CMSampleBuffer+CGImage.swift in Sources */,
 				8FB0DDE826CB15240063B6A5 /* VideoCaptureService.swift in Sources */,
 				8FB56ED026CF34530067596F /* StyleThumbnailView.swift in Sources */,
